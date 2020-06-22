@@ -1,0 +1,113 @@
+@import "./scss/variables.scss";
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap');
+
+ * {
+   margin: 0;
+   padding: 0;
+   outline: 0;
+   box-sizing: border-box;
+ }
+
+ body, .globalBG {
+   font: 400 14px Roboto, sans-serif;
+   background: $lighterGray;
+   -webkit-font-smoothing: antialiased;
+
+   &.dark{
+    background: $darkerGray;
+   }
+ }
+
+
+ input, button, textarea{
+   font: 400 18px Roboto, sans-serif;  
+ }
+
+ button{
+   cursor: pointer;
+ }
+
+ form input{
+   width: 100%;
+   height: 60px;
+   color: $darkGray;
+   border: 1px solid $lightGray;
+   border-radius: 8px;
+   padding: 0 24px;
+ }
+
+ form textarea{
+  width: 100%;
+  resize: vertical;
+  min-height: 144px;
+  color: $darkGray;
+  border: 1px solid $lightGray;
+  border-radius: 8px;
+  padding: 16px 24px;
+  line-height: 24px;
+}
+
+ .dark{
+  form input{
+    color: $lightGray;
+    border: 1px solid $darkGray;
+    background: #000;
+  }
+  .button{
+    color:#000;
+    background: $red;
+  }
+ }
+ 
+
+ .button{
+   width: 100%;
+   height: 60px;
+   background:  $red;
+   border: 0;
+   border-radius: 8px;
+   color: #FFF;
+   font-weight: 700;
+   margin-top: 16px;
+   display: inline-block;
+   text-align: center;
+   text-decoration: none;
+   line-height: 60px;
+   transition: filter 0.2s;
+ }
+
+ .button:hover{
+   filter: brightness(90%);
+ }
+
+
+ .iconPos{
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  transition: filter 0.5s;
+  filter: blur(1px);
+  &:hover{
+    filter: blur(0px);
+  }
+  -webkit-font-smoothing: antialiased;
+ }
+
+ .back-link{ 
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+  color: $gray;
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: opacity 0.2s;
+
+  &:hover{
+    opacity: 0.8;
+  }
+
+  svg{
+    margin-right: 8px;
+  }
+}
