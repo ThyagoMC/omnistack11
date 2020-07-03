@@ -8,7 +8,7 @@ module.exports = {
         const id = crypto.randomBytes(4).toString('HEX');
     
         await connection("ongs").insert({
-            id, name, email, whatsapp, city, uf
+            id, name, email, whatsapp, city, uf, created_at: new Date()
         });
     
         res.json({ id });

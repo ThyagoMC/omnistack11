@@ -8,7 +8,7 @@ function Header( { children }){
 
     return (
         <div className={"iconPos" + (state.dark? " dark":"")} onClick={()=>dispatch({ type: 'swap_color' })} >
-                <FiSun size={40} color={ state.dark? "white":"black"} />
+                <FiSun size={40} color={ state.dark? "rgba(255,255,255,0.2)":"rgba(0,0,0,0.2)"} />
         </div>
     );
 }

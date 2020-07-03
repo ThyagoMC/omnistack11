@@ -85,11 +85,7 @@
   position: absolute;
   top: 5px;
   right: 5px;
-  transition: filter 0.5s;
-  filter: blur(1px);
-  &:hover{
-    filter: blur(0px);
-  }
+  padding: 2px 4px;
   -webkit-font-smoothing: antialiased;
  }
 

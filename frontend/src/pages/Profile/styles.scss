@@ -55,7 +55,12 @@
       button{
         background: transparent;
         position: absolute;
-        right: 24px;
+        &.btn-remove{
+          right: 24px;
+        }
+        &.btn-edit{
+          right: 64px;
+        }
         top: 24px;
         border: 0;
         transition: opacity 0.1s;
